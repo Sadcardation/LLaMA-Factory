@@ -1,0 +1,13 @@
+### Note: DO NOT use quantized model or quantization_bit when merging lora adapters
+
+### model
+model_name_or_path: meta-llama/Meta-Llama-3-8B-Instruct
+adapter_name_or_path: saves/llama3-8b/lora/dpo-rlhf_helpful-combined-0.1-1.5e4-3
+template: llama3
+finetuning_type: lora
+
+### export
+export_dir: models/combined/llama3_lora_dpo_rlhf_helpful-0.1-1.5e4-3
+export_size: 2
+export_device: auto
+export_legacy_format: false

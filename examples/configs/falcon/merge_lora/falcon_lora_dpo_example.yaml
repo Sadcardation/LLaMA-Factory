@@ -1,0 +1,13 @@
+### Note: DO NOT use quantized model or quantization_bit when merging lora adapters
+
+### model
+model_name_or_path: tiiuae/falcon-7b-instruct
+adapter_name_or_path: saves/falcon/lora/dpo-no_attack-0.0-1.5e04-3
+template: falcon
+finetuning_type: lora
+
+### export
+export_dir: models/no_attack/falcon_lora_dpo_rlhf_helpful-0.0-1.5e04-3
+export_size: 2
+export_device: auto
+export_legacy_format: false
